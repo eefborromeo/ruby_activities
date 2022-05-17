@@ -33,11 +33,7 @@ class Admin < User
     include AdminPermisson
 
     def admin_login
-        self.login
-    end
-
-    def change_password
-        self.change_password
+        login
     end
 end
   
@@ -46,11 +42,7 @@ class Buyer < User
     include BuyerPermission
 
     def buyer_login
-        self.login
-    end
-
-    def change_password
-        self.change_password
+        login
     end
 end
   
